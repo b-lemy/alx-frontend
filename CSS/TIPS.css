@@ -1,0 +1,142 @@
+p { color: red; }
+p { color: #f00; }
+p { color: #ff0000; }
+p { color: rgb(255,0,0); }
+p { color: rgb(100%, 0%, 0%); }
+p { color: hsl(0, 100%, 50%); }
+
+:root {
+    --main-bg-color: blue;
+}
+body {
+    color: var(--main-bg-color);
+}
+
+/*font-size: 2rem;*/
+/*padding: 1.2rem 2rem;*/
+
+p {
+    line-height: 1;
+}
+
+a {
+    text-decoration: line-through;
+}
+
+p {
+    text-transform: lowercase;
+}
+
+a {
+    letter-spacing: -0.4rem;
+}
+
+/* a:link or just a */
+a:link {
+    color: green;
+}
+/* when you have already clicked and visited the link / page */
+a:visited {
+    color: cadetblue;
+}
+/* any link over which the user's pointer is hovering */
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: darkcyan;
+}
+
+/* This is the box-sizing by default */
+.box {
+    box-sizing: content-box;
+}
+/* This is the box-sizing value we usually use to create layouts */
+.box {
+    box-sizing: border-box;
+}
+/* This box has dimensions, padding and margin */
+.box-dimensions {
+    width: 100px;
+    height: 50px;
+    padding-top: 30px;
+    margin: 5px;
+}
+
+selector::after {
+    property: value;
+}
+
+/* Links with "facebook" anywhere in the URL */
+a[href*="facebook"] {
+    color: #3C5A99;
+}
+/* Internal links, beginning with "#" */
+a[href^="#"] {
+    background-color: gold;
+}
+/* Links that end in ".org" */
+a[href$=".org"] {
+    color: red;
+}
+
+.box {
+    background: red ;
+}
+lineargradient
+image
+
+.box {
+    display: block;
+    padding: 1rem;
+    border-width: 2px;
+    border-style: double;
+    border-color: orange;
+    border-radius: 12px;
+}
+/* shorthand version */
+.box {
+    display: block;
+    padding: 1rem;
+    border-width: 2px;
+    border-radius: 12px;
+}
+
+/* not 100% browser support yet, but could be user in some cases */
+.component {
+    position: sticky;
+    top: 0;
+}
+
+/*transform: perspective(17px);*/
+/*transform: rotate3d(1, 2.0, 3.0, 10deg);*/
+/*transform: translate(12px, 50%);*/
+/*transform: scale(2, 0.5);*/
+/*transform: skew(30deg, 20deg);*/
+
+@keyframes example {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+.box {
+    width: 10rem;
+    height: 10rem;
+    background-color: blue;
+    animation-name: example;
+    animation-duration: 3s;
+}
+
+.element {
+    /* top-left top-right/bottom-left bottom-right */
+    border-radius: 5px 20px 5px;
+    background: #BADA55;
+}
+
+.element {
+    border-radius: 10px / 30px; /* horizontal radius / vertical radius */
+    scroll-behavior: smooth;
+}
