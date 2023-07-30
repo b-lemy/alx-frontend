@@ -140,3 +140,9 @@ image
     border-radius: 10px / 30px; /* horizontal radius / vertical radius */
     scroll-behavior: smooth;
 }
+.element {
+    font-variant: small-caps;
+    /*font-variant: common-ligatures small-caps;*/
+}
+/* Global values */
+
